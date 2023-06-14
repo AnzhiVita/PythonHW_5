@@ -7,17 +7,6 @@
 # В ответе напишите “Парам пам-пам”, если с ритмом все в порядке и “Пам парам”, 
 # если с ритмом все не в порядке.
 
-# def f(words):
-#     return sum(1 for i in words if i in 'аеёиоуыэюя')
-    
-# c = "Хорошо-живет-на-свете-Винни-Пух! Оттого-поет-он-эти-Песни-вслух!"
-# st = c.lower().split()
-# t = f(st[0])
-# if all([f(i) == t for i in st]):
-#     print('Парам пам-пам')
-# else:
-#     print('Пам парам')
-
 rhyme = input('Напиши рифму: ')
 st = rhyme.lower().split()
 words = lambda x: sum(1 for i in x if i in 'аеёиоуыэюя')
